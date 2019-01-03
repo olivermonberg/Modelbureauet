@@ -11,23 +11,6 @@
     </Window.DataContext>
 
     <Window.Resources>
-        <local:Converter x:Key="Converter"></local:Converter>
-
-        <Style TargetType="{x:Type Label}">
-            <Style.Setters>
-                <Setter Property="Foreground" Value="black" />
-                <Setter Property="Margin" Value="5"/>
-                <Setter Property="HorizontalAlignment" Value="Right"/>
-            </Style.Setters>
-        </Style>
-
-        <Style TargetType="{x:Type TextBox}">
-            <Style.Setters>
-                <Setter Property="Foreground" Value="black" />
-                <Setter Property="Margin" Value="5"/>
-            </Style.Setters>
-        </Style>
-
         <Style TargetType="{x:Type Button}">
             <Style.Setters>
                 <Setter Property="Foreground" Value="black" />
@@ -38,14 +21,19 @@
                 <Setter Property="FontWeight" Value="Bold"/>
                 <Setter Property="FontStyle" Value="Italic"/>
                 <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="Background" Value="Beige"/>
+                <Setter Property="BorderBrush" Value="RosyBrown"/>
+                <Setter Property="BorderThickness" Value="2.5"/>
             </Style.Setters>
-        </Style>
-
-        <Style TargetType="{x:Type DataGrid}">
-            <Style.Setters>
-                <Setter Property="Foreground" Value="black" />
-                <Setter Property="Margin" Value="5"/>
-            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Effect" >
+                        <Setter.Value>
+                            <DropShadowEffect ShadowDepth="3.5" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
         </Style>
 
         <Style TargetType="{x:Type Image}">
@@ -56,7 +44,7 @@
         </Style>
     </Window.Resources>
 
-    <Grid ShowGridLines="false">
+    <Grid ShowGridLines="false" Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -65,7 +53,7 @@
 
             <Button Content="Manage models" Command="{Binding AddModelsBtnCommand}"></Button>
             <Button Content="Manage jobs" Command="{Binding AddJobsBtnCommand}"></Button>
-            <Button Content="Assign model to a job" Command="{Binding ManageJobsBtnCommand}"></Button>
+            <Button Content="Assign models to jobs" Command="{Binding ManageJobsBtnCommand}"></Button>
 
         </StackPanel>
 

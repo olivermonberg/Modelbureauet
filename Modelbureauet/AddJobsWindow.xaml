@@ -79,7 +79,7 @@
                 <Label Content="Number of models:" Grid.Row="4" Grid.Column="0"></Label>
                 <Label Content="Comments:" Grid.Row="5" Grid.Column="0"></Label>
                 <Label Content="Is planned:" Grid.Row="6" Grid.Column="0"></Label>
-                <Label Content="Id (Is read only):" Grid.Row="7" Grid.Column="0"></Label>
+                <Label Content="Id (Cannot be changed):" Grid.Row="7" Grid.Column="0"></Label>
 
 
                 <TextBox Name="nameofCustomerTB" Text="{Binding ElementName=JobsDg, Mode=OneWay, Path=SelectedItem.CustomerName}" Grid.Row="0" Grid.Column="1"></TextBox>
@@ -92,7 +92,7 @@
                     <ComboBoxItem>True</ComboBoxItem>
                     <ComboBoxItem IsSelected="True">False</ComboBoxItem>
                 </ComboBox>
-                <TextBox Name="IdTB" Text="{Binding ElementName=JobsDg, Mode=OneWay, Path=SelectedItem.Id}" Grid.Row="7" Grid.Column="1" IsReadOnly="True" Background="LightGray"></TextBox>
+                <TextBox Name="IdTB" Text="{Binding ElementName=JobsDg, Mode=OneWay, Path=SelectedItem.Id}" Grid.Row="7" Grid.Column="1" IsReadOnly="True" Background="#ECECEC"></TextBox>
 
             </Grid>
             <Button Content="Add job" Command="{Binding AddJobCommand}">
