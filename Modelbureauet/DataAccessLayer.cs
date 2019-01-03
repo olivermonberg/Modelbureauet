@@ -98,5 +98,23 @@ namespace Modelbureauet
             }
             return false;
         }
+
+        public async Task<bool> AddModelToJob(ModelToJobAssignmentDTO dto)
+        {
+            var str = await client.PostAsJsonAsync($"api/ModelToJobAssignments", dto);
+
+            if (str.StatusCode == HttpStatusCode.Created)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public async Task<List<JobsDTO>> GetAllAssignedJobs()
+        {
+            var str = await client.GetStringAsync($"api/ModelToJobAssignments/GetAllJobsAssignedToModels");
+            var toReturn = JsonConvert.DeserializeObject<List<JobsDTO>>(str);
+            return toReturn;
+        }
     }
 }

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Modelbureauet
 {
     /// <summary>
-    /// Interaction logic for ManageJobsWindow.xaml
+    /// Interaction logic for AssignModelToJobWindow.xaml
     /// </summary>
-    public partial class ManageJobsWindow : Window
+    public partial class AssignModelToJobWindow : Window
     {
-        public ManageJobsWindow()
+        public AssignModelToJobWindow()
         {
             InitializeComponent();
         }

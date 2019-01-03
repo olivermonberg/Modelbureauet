@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Modelbureauet"
         mc:Ignorable="d"
-        Title="AddJobsWindow" Height="450" Width="800">
+        Title="Manage jobs" Height="450" Width="800">
     <Window.DataContext>
         <local:CommandsAddJobs />
     </Window.DataContext>
@@ -50,13 +50,13 @@
         </Style>
     </Window.Resources>
 
-    <Grid ShowGridLines="true">
+    <Grid ShowGridLines="false">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
-            <Grid ShowGridLines="true">
+            <Grid ShowGridLines="false">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
@@ -126,7 +126,7 @@
             </Button>
            
 
-            <Button Content="Delete product" Command="{Binding DeleteJobCommand}" CommandParameter="{Binding ElementName=JobsDg, Path=SelectedItem}"></Button>
+            <Button Content="Delete job" Command="{Binding DeleteJobCommand}" CommandParameter="{Binding ElementName=JobsDg, Path=SelectedItem}"></Button>
             <!--<Button Content="Create order" Command="{Binding CreateOrderBtnCommand}"></Button>-->
 
         </StackPanel>

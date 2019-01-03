@@ -84,20 +84,26 @@
     <Compile Include="AddModelWindow.xaml.cs">
       <DependentUpon>AddModelWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AssignModelToJobWindow.xaml.cs">
+      <DependentUpon>AssignModelToJobWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CommandsAddJobs.cs" />
+    <Compile Include="CommandsAssignModelToJob.cs" />
     <Compile Include="Converter.cs" />
     <Compile Include="DataAccessLayer.cs" />
     <Compile Include="JobsDTO.cs" />
-    <Compile Include="ManageJobsWindow.xaml.cs">
-      <DependentUpon>ManageJobsWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ModelDTO.cs" />
+    <Compile Include="ModelToJobAssignmentDTO.cs" />
     <Compile Include="RelayCommand.cs" />
     <Page Include="AddJobsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddModelWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AssignModelToJobWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,10 +120,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ManageJobsWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -145,9 +147,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="logo.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="fashionLogo.jpg" />

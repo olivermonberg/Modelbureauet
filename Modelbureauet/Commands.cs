@@ -68,8 +68,8 @@ namespace Modelbureauet
 
         private void ManageJobsBtn()
         {
-            ManageJobsWindow _manageJobsWindow = new ManageJobsWindow();
-            _manageJobsWindow.Show();
+            AssignModelToJobWindow _assignModelToJobWindow = new AssignModelToJobWindow();
+            _assignModelToJobWindow.Show();
         }
 
         /*----- ADD MODEL WINDOW -----*/

@@ -56,16 +56,16 @@
         </Style>
     </Window.Resources>
 
-    <Grid ShowGridLines="true">
+    <Grid ShowGridLines="false">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" VerticalAlignment="Center">
 
-            <Button Content="Add models" Command="{Binding AddModelsBtnCommand}"></Button>
-            <Button Content="Add jobs" Command="{Binding AddJobsBtnCommand}"></Button>
-            <Button Content="Manage jobs" Command="{Binding ManageJobsBtnCommand}"></Button>
+            <Button Content="Manage models" Command="{Binding AddModelsBtnCommand}"></Button>
+            <Button Content="Manage jobs" Command="{Binding AddJobsBtnCommand}"></Button>
+            <Button Content="Assign model to a job" Command="{Binding ManageJobsBtnCommand}"></Button>
 
         </StackPanel>
 

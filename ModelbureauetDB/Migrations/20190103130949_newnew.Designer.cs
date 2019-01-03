@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ModelbureauetDB.Models;
 
 namespace ModelbureauetDB.Migrations
 {
     [DbContext(typeof(ModelbureauetDBContext))]
-    partial class ModelbureauetDBContextModelSnapshot : ModelSnapshot
+    [Migration("20190103130949_newnew")]
+    partial class newnew
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

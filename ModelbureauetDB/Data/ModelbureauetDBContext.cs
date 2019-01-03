@@ -17,5 +17,7 @@ namespace ModelbureauetDB.Models
         public DbSet<ModelbureauetDB.Models.Model> Model { get; set; }
 
         public DbSet<ModelbureauetDB.Models.Jobs> Jobs { get; set; }
+
+        public DbSet<ModelbureauetDB.Models.ModelToJobAssignment> ModelToJobAssignment { get; set; }
     }
 }
