@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelbureauet", "Modelburea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelbureauetDB", "ModelbureauetDB\ModelbureauetDB.csproj", "{FEE47546-9ADB-4571-8771-0D8552FD3A7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelWeb", "ModelWeb\ModelWeb.csproj", "{0FB15E30-601E-42ED-B576-C28581AD49DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FEE47546-9ADB-4571-8771-0D8552FD3A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEE47546-9ADB-4571-8771-0D8552FD3A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEE47546-9ADB-4571-8771-0D8552FD3A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FB15E30-601E-42ED-B576-C28581AD49DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FB15E30-601E-42ED-B576-C28581AD49DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB15E30-601E-42ED-B576-C28581AD49DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FB15E30-601E-42ED-B576-C28581AD49DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

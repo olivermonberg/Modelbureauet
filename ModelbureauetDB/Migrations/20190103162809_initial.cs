@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ModelbureauetDB.Migrations
 {
-    public partial class initial2 : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -45,6 +45,20 @@ namespace ModelbureauetDB.Migrations
                 {
                     table.PrimaryKey("PK_Model", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "ModelToJobAssignment",
+                columns: table => new
+                {
+                    Id = table.Column<long>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    ModelId = table.Column<long>(nullable: false),
+                    JobId = table.Column<long>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ModelToJobAssignment", x => x.Id);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -54,6 +68,9 @@ namespace ModelbureauetDB.Migrations
 
             migrationBuilder.DropTable(
                 name: "Model");
+
+            migrationBuilder.DropTable(
+                name: "ModelToJobAssignment");
         }
     }
 }

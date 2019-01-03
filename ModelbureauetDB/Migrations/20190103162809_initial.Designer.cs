@@ -10,8 +10,8 @@ using ModelbureauetDB.Models;
 namespace ModelbureauetDB.Migrations
 {
     [DbContext(typeof(ModelbureauetDBContext))]
-    [Migration("20190103093614_initial2")]
-    partial class initial2
+    [Migration("20190103162809_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -69,6 +69,21 @@ namespace ModelbureauetDB.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Model");
+                });
+
+            modelBuilder.Entity("ModelbureauetDB.Models.ModelToJobAssignment", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<long>("JobId");
+
+                    b.Property<long>("ModelId");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ModelToJobAssignment");
                 });
 #pragma warning restore 612, 618
         }
