@@ -30,5 +30,7 @@ namespace ModelWeb.Areas.Identity.Data
         public DbSet<ModelWeb.Models.Jobs> Jobs { get; set; }
 
         public DbSet<ModelWeb.Models.ModelToJobAssignment> ModelToJobAssignment { get; set; }
+
+        public DbSet<ModelWeb.Models.Expenses> Expenses { get; set; }
     }
 }

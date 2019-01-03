@@ -1,4 +1,35 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+var footerNode = document.getElementById("footId");
+footerNode.innerHTML = footerNode.innerHTML + "<i>This page was last refreshed on: " + document.lastModified + "</i>";
 
-// Write your JavaScript code.
+var menuTextNode = document.getElementsByClassName("menuText");
+for (var i = 0; i < menuTextNode.length; i++) {
+    menuTextNode[i].addEventListener("mouseover",
+        function () {
+            this.style.fontWeight = "bold";
+        });
+    menuTextNode[i].addEventListener("mouseout",
+        function () {
+            this.style.fontWeight = "normal";
+        });
+}
+
+var logoutBtnIdNode = document.getElementById("logoutBtnId");
+logoutBtnIdNode.addEventListener("mouseover",
+    function () {
+        this.style.fontWeight = "bold";
+    });
+logoutBtnIdNode.addEventListener("mouseout",
+    function () {
+        this.style.fontWeight = "normal";
+    });
+
+var modelWebsiteIdNode = document.getElementById("modelWebsiteId");
+modelWebsiteIdNode.addEventListener("mouseover",
+    function () {
+        this.style.fontWeight = "bold";
+    });
+modelWebsiteIdNode.addEventListener("mouseout",
+    function () {
+        this.style.fontWeight = "normal";
+    });

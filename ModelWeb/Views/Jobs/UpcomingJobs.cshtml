@@ -5,34 +5,28 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>UpcomingJobs</h2>
+<h2>Upcoming jobs</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.CustomerName)
+                Customer name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.StartDate)
+                Start date
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NumberOfDays)
+                Duration (days)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Location)
+                Location
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NumberOfModels)
+                Number of models
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Comments)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsPlanned)
+                Comments
             </th>
             <th></th>
         </tr>
@@ -59,12 +53,8 @@
                 @Html.DisplayFor(modelItem => item.Comments)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IsPlanned)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-controller="Expenses" asp-action="Create" asp-route-jobIdParameter="@item.Id">Add expenses</a> | 
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a>
             </td>
         </tr>
 }

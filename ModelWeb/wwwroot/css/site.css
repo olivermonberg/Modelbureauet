@@ -1,5 +1,22 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
+.navbar navbar-inverse navbar-fixed-top .menuText a {
+    color: goldenrod;
+}
+
+#testId.navbar-collapse .nav .menuText {
+    color: goldenrod;
+}
+
+#logoutBtnId {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+#modelWebsiteId {
+    color: gold;
+}
+
 body {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -12,10 +29,14 @@ body {
     padding-right: 15px;
 }
 
+
 /* Carousel */
 .carousel-caption p {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.4;
+    color: goldenrod;
+    font-weight: bold;
+    text-shadow: -1.1px 0 black, 0 1.1px black, 1.1px 0 black, 0 -1.1px black;
 }
 
 /* Make .svg files in the carousel display properly in older browsers */

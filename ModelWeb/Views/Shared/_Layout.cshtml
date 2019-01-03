@@ -26,15 +26,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">ModelWeb</a>
+                <a id="modelWebsiteId" asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Model website</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div id="testId" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Jobs" asp-action="UpcomingJobs">Upcoming jobs</a></li>
-                    <li><a asp-area="" asp-controller="Jobs" asp-action="CompletedJobs">Completed jobs</a></li>
-                    <li><a asp-area="" asp-controller="Jobs" asp-action="Index">Index</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a class="menuText" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a class="menuText" asp-area="" asp-controller="Jobs" asp-action="UpcomingJobs">Upcoming jobs</a></li>
+                    <li><a class="menuText" asp-area="" asp-controller="Jobs" asp-action="CompletedJobs">Completed jobs</a></li>
+                    <li><a class="menuText" asp-area="" asp-controller="Expenses" asp-action="Index">Your expenses</a></li>
                 </ul>
                 <partial name="_LoginPartial" />
             </div>
@@ -46,8 +45,8 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2019 - ModelWeb</p>
+        <footer id="footId">
+            <p>&copy; 2019 - Model website</p>
         </footer>
     </div>
 

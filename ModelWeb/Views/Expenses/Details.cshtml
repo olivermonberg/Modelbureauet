@@ -1,0 +1,50 @@
+﻿@model ModelWeb.Models.Expenses
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Expenses</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            Date
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt>
+            Comments
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+        <dt>
+            Amount
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.JobId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JobId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ModelId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
