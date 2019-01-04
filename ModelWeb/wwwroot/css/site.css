@@ -1,10 +1,9 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
-for details on configuring this project to bundle and minify static web assets. */
-.navbar navbar-inverse navbar-fixed-top .menuText a {
+﻿
+/*.navbar navbar-inverse navbar-fixed-top .menuText a {
     color: goldenrod;
-}
+}*/
 
-#testId.navbar-collapse .nav .menuText {
+#menuItemsId.navbar-collapse .nav .menuText {
     color: goldenrod;
 }
 

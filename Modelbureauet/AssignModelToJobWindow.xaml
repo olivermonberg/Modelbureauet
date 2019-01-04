@@ -61,7 +61,7 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Grid ShowGridLines="True">
+        <Grid ShowGridLines="false">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
@@ -94,16 +94,13 @@
                     <!--<DataGridTextColumn x:Name ="AssignedDurationId" Header="Duration (days)" Binding="{Binding Path='NumberOfDays'}"></DataGridTextColumn>
                     <DataGridTextColumn x:Name ="AssignedLocationId" Header="Location" Binding="{Binding Path='Location'}"></DataGridTextColumn>
                     <DataGridTextColumn x:Name ="AssignedNumberOfModelsId" Header="Number of models" Binding="{Binding Path='NumberOfModels'}"></DataGridTextColumn>
-                    <DataGridTextColumn x:Name ="AssignedCommentsId" Header="Comments" Binding="{Binding Path='HairColor'}"></DataGridTextColumn>
-                    <DataGridTextColumn x:Name ="AssignedIsPlannedId" Header="Comments" Binding="{Binding Path='IsPlanned'}"></DataGridTextColumn>
+                    <DataGridTextColumn x:Name ="AssignedCommentsId" Header="Comments" Binding="{Binding Path='Comments'}"></DataGridTextColumn>
+                    <DataGridTextColumn x:Name ="AssignedIsPlannedId" Header="Is planned" Binding="{Binding Path='IsPlanned'}"></DataGridTextColumn>
                     <DataGridTextColumn x:Name ="AssignedIdId" Header="Id" Binding="{Binding Path='Id'}"></DataGridTextColumn>-->
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>
 
-        
-
-        
 
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
@@ -145,8 +142,5 @@
             </DataGrid>
         </Grid>
 
-        
-
-        
     </Grid>
 </Window>

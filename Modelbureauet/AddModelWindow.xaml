@@ -73,7 +73,7 @@
                 <Label Content="Weight:" Grid.Row="4" Grid.Column="0"></Label>
                 <Label Content="Hair color:" Grid.Row="5" Grid.Column="0"></Label>
                 <Label Content="Comments:" Grid.Row="6" Grid.Column="0"></Label>
-                <Label Content="Id (Cannot be changed):" Grid.Row="7" Grid.Column="0"></Label>
+                <Label Content="Id (cannot be changed):" Grid.Row="7" Grid.Column="0"></Label>
 
                 <TextBox Name="nameTB" Text="{Binding ElementName=ModelsDg, Mode=OneWay, Path=SelectedItem.Name}" Grid.Row="0" Grid.Column="1"></TextBox>
                 <TextBox Name="phoneNumberTB" Text="{Binding ElementName=ModelsDg, Mode=OneWay, Path=SelectedItem.PhoneNumber}" Grid.Row="1" Grid.Column="1"></TextBox>

@@ -79,7 +79,7 @@
                 <Label Content="Number of models:" Grid.Row="4" Grid.Column="0"></Label>
                 <Label Content="Comments:" Grid.Row="5" Grid.Column="0"></Label>
                 <Label Content="Is planned:" Grid.Row="6" Grid.Column="0"></Label>
-                <Label Content="Id (Cannot be changed):" Grid.Row="7" Grid.Column="0"></Label>
+                <Label Content="Id (cannot be changed):" Grid.Row="7" Grid.Column="0"></Label>
 
 
                 <TextBox Name="nameofCustomerTB" Text="{Binding ElementName=JobsDg, Mode=OneWay, Path=SelectedItem.CustomerName}" Grid.Row="0" Grid.Column="1"></TextBox>
@@ -138,8 +138,8 @@
                 <DataGridTextColumn x:Name ="DurationId" Header="Duration (days)" Binding="{Binding Path='NumberOfDays'}"></DataGridTextColumn>
                 <DataGridTextColumn x:Name ="LocationId" Header="Location" Binding="{Binding Path='Location'}"></DataGridTextColumn>
                 <DataGridTextColumn x:Name ="NumberOfModelsId" Header="Number of models" Binding="{Binding Path='NumberOfModels'}"></DataGridTextColumn>
-                <DataGridTextColumn x:Name ="CommentsId" Header="Comments" Binding="{Binding Path='HairColor'}"></DataGridTextColumn>
-                <DataGridTextColumn x:Name ="IsPlannedId" Header="Comments" Binding="{Binding Path='IsPlanned'}"></DataGridTextColumn>
+                <DataGridTextColumn x:Name ="CommentsId" Header="Comments" Binding="{Binding Path='Comments'}"></DataGridTextColumn>
+                <DataGridTextColumn x:Name ="IsPlannedId" Header="Is planned" Binding="{Binding Path='IsPlanned'}"></DataGridTextColumn>
                 <DataGridTextColumn x:Name ="IdId" Header="Id" Binding="{Binding Path='Id'}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>

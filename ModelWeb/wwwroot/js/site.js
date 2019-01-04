@@ -1,9 +1,10 @@
 ﻿
-var footerNode = document.getElementById("footId");
-footerNode.innerHTML = footerNode.innerHTML + "<i>This page was last refreshed on: " + document.lastModified + "</i>";
+var footNode = document.getElementById("footId");
+footNode.innerHTML = footNode.innerHTML + "<i>This page was last refreshed on: " + document.lastModified + "</i>";
 
 var menuTextNode = document.getElementsByClassName("menuText");
-for (var i = 0; i < menuTextNode.length; i++) {
+for (var i = 0; i < menuTextNode.length; i++)
+{
     menuTextNode[i].addEventListener("mouseover",
         function () {
             this.style.fontWeight = "bold";
