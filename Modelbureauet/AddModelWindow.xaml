@@ -116,8 +116,7 @@
             </Button>
 
             <Button Content="Delete product" Command="{Binding DeleteModelCommand}" CommandParameter="{Binding ElementName=ModelsDg, Path=SelectedItem}"></Button>
-            <!--<Button Content="Create order" Command="{Binding CreateOrderBtnCommand}"></Button>-->
-
+            
         </StackPanel>
 
         <DataGrid IsReadOnly="True" GridLinesVisibility="Horizontal" Grid.Row="0" Grid.Column="1" x:Name="ModelsDg" IsSynchronizedWithCurrentItem="True" HeadersVisibility="Column" AutoGenerateColumns="False" ItemsSource="{Binding Models}">

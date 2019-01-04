@@ -81,7 +81,6 @@
                 <Label Content="Is planned:" Grid.Row="6" Grid.Column="0"></Label>
                 <Label Content="Id (cannot be changed):" Grid.Row="7" Grid.Column="0"></Label>
 
-
                 <TextBox Name="nameofCustomerTB" Text="{Binding ElementName=JobsDg, Mode=OneWay, Path=SelectedItem.CustomerName}" Grid.Row="0" Grid.Column="1"></TextBox>
                 <TextBox Name="startDateTB" Text="{Binding ElementName=JobsDg, Mode=OneWay, Path=SelectedItem.StartDate, StringFormat='dd-MM-yyyy HH:mm'}" Grid.Row="1" Grid.Column="1"></TextBox>
                 <TextBox Name="durationTB" Text="{Binding ElementName=JobsDg, Mode=OneWay, Path=SelectedItem.NumberOfDays}" Grid.Row="2" Grid.Column="1"></TextBox>
@@ -125,10 +124,8 @@
                 </Button.CommandParameter>
             </Button>
            
-
             <Button Content="Delete job" Command="{Binding DeleteJobCommand}" CommandParameter="{Binding ElementName=JobsDg, Path=SelectedItem}"></Button>
-            <!--<Button Content="Create order" Command="{Binding CreateOrderBtnCommand}"></Button>-->
-
+            
         </StackPanel>
 
         <DataGrid IsReadOnly="True" GridLinesVisibility="Horizontal" Grid.Row="0" Grid.Column="1" x:Name="JobsDg" IsSynchronizedWithCurrentItem="True" HeadersVisibility="Column" AutoGenerateColumns="False" ItemsSource="{Binding Jobs}">
